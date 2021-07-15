@@ -22,28 +22,28 @@
         <form action="/karyawan/update/{{$data->id}}" method="POST">
             @csrf
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nama Depan</label>
+                <label for="exampleInputEmail1" class="form-label">{{__('Nama Depan')}}</label>
                 <input type="text" name="namadepan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 value="{{$data->namadepan}}">
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nama Belakang</label>
+                <label for="exampleInputEmail1" class="form-label">{{__('Nama Belakang')}}</label>
                 <input type="text" name="namabelakang" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 value="{{$data->namabelakang}}">
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nama Perusahaan</label>
+                <label for="exampleInputEmail1" class="form-label">{{__('Nama Perusahaan')}}</label>
                 <input type="text" name="perusahaan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 value="{{$data->perusahaan}}">
             </div>
             <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <label for="exampleInputEmail1" class="form-label">{{__('Email')}}</label>
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
             value="{{$data->email}}">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div id="emailHelp" class="form-text">Well never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nomor Telepon</label>
+                <label for="exampleInputEmail1" class="form-label">{{__('Nomor Telepon')}}</label>
                 <input type="number" name="tlpn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 value="{{$data->tlpn}}">
             </div>

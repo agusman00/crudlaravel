@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
 
@@ -38,7 +38,7 @@
                 <div class="sidebar-brand-icon rotate-n-0">
                     <i class="fas fa-user-tie"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Admin</div>
+                <div class="sidebar-brand-text mx-3">{{__('Admin')}}</div>
             </a>
 
             <!-- Divider -->
@@ -48,7 +48,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>{{__('Dashboard')}}</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
@@ -56,32 +56,58 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Table</span>
+                    <span>{{__('Table')}}</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item active" href="/perusahaan/index">Perusahaan</a>
-                        <a class="collapse-item" href="/">Karyawan</a>
+                        <a class="collapse-item active" href="/perusahaan/index">{{__('Perusahaan')}}</a>
+                        <a class="collapse-item" href="/">{{__('Karyawan')}}</a>
                     </div>
                 </div>
             </li>
+
+            <!--tt-->
+            @if(app()->getLocale()=='id')
+                <a href="{{url('locale/en')}}" class="btn btn-primary">Eng {{trans('english')}}</a>
+                <a href="{{url('locale/cn')}}" class="btn btn-primary">Cn {{trans('china')}}</a>
+                <a href="{{url('locale/jp')}}" class="btn btn-primary">Jp {{trans('jepang')}}</a>
+                <a href="{{url('locale/id')}}" class="btn btn-primary">Id {{trans('indonesian')}}</a>
+            @endif
+            @if(app()->getLocale()=='en')
+                <a href="{{url('locale/id')}}" class="btn btn-primary">Id {{trans('indonesian')}}</a>
+                <a href="{{url('locale/cn')}}" class="btn btn-primary">Cn {{trans('china')}}</a>
+                <a href="{{url('locale/jp')}}" class="btn btn-primary">Jp {{trans('jepang')}}</a>
+                <a href="{{url('locale/en')}}" class="btn btn-primary">Eng {{trans('english')}}</a>
+            @endif
+            @if(app()->getLocale()=='cn')
+                <a href="{{url('locale/id')}}" class="btn btn-primary">Id {{trans('indonesian')}}</a>
+                <a href="{{url('locale/en')}}" class="btn btn-primary">Eng {{trans('english')}}</a>
+                <a href="{{url('locale/jp')}}" class="btn btn-primary">Jp {{trans('jepang')}}</a>
+                <a href="{{url('locale/cn')}}" class="btn btn-primary">Cn {{trans('china')}}</a>
+            @endif
+            @if(app()->getLocale()=='jp')
+                <a href="{{url('locale/id')}}" class="btn btn-primary">Id {{trans('indonesian')}}</a>
+                <a href="{{url('locale/en')}}" class="btn btn-primary">Eng {{trans('english')}}</a>
+                <a href="{{url('locale/cn')}}" class="btn btn-primary">Cn {{trans('china')}}</a>
+                <a href="{{url('locale/jp')}}" class="btn btn-primary">Jp {{trans('jepang')}}</a>
+            @endif
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
                     aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
+                    <span>{{__('Pages')}}</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="/log/myaccountk">My profile</a>
+                        <a class="collapse-item" href="/log/myaccountk">{{__('My profile')}}</a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="/404">Setting Akun</a>
+                        <h6 class="collapse-header">{{__('Other Pages :')}}</h6>
+                        <a class="collapse-item" href="/404">{{__('Setting Akun')}}</a>
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                            Logout
+                            {{__('Logout')}}
                         </a>
                     </div>
                 </div>
@@ -117,7 +143,7 @@
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="{{__('Search for...')}}"
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
@@ -166,7 +192,7 @@
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
-                                    Alerts Center
+                                    {{__('Alerts Center')}}
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
@@ -175,8 +201,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                        <div class="small text-gray-500">{{__('December 12, 2019')}}</div>
+                                        <span class="font-weight-bold">{{__('A new monthly report is ready to download!')}}</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -186,8 +212,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
+                                        <div class="small text-gray-500">{{__('December 7, 2019')}}</div>
+                                        {{__('$290.29 has been deposited into your account!')}}
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -197,11 +223,11 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
+                                        <div class="small text-gray-500">{{__('December 2, 2019')}}</div>
+                                        {{__('Spending Alert: Weve noticed unusually high spending for your account.')}}
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">{{__('Show All Alerts')}}</a>
                             </div>
                         </li>
 
@@ -217,7 +243,7 @@
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
-                                    Message Center
+                                    {{__('Message Center')}}
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
@@ -226,8 +252,7 @@
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
-                                            problem I've been having.</div>
+                                        <div class="text-truncate">{{__('Hi there! I am wondering if you can help me with a problem I ve been having.')}}</div>
                                         <div class="small text-gray-500">Emily Fowler · 58m</div>
                                     </div>
                                 </a>
@@ -238,40 +263,32 @@
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how
-                                            would you like them sent to you?</div>
+                                        <div class="text-truncate">{{__('I have the photos that you ordered last month, how would you like them sent to you?')}}</div>
                                         <div class="small text-gray-500">Jae Chun · 1d</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
-                                            the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
-                                            told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+
+                                <a class="dropdown-item text-center small text-gray-500" href="#">{{__('Read More Messages')}}</a>
                             </div>
                         </li>
 
-                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <!--t-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-gray-600" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                            {{__('Country')}}</a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a href="#" style="margin-left: 10px" > {{__('IDONESIAN')}}</a><br>
+                                <a href="{{url('locale/en')}}" style="margin-left: 10px" > {{__('ENGLISH')}}</a><br>
+                                <a href="#" style="margin-left: 10px" > {{__('CHINA')}}</a><br>
+                                <a href="#" style="margin-left: 10px" > {{__('JEPANG')}}</a>
+                            </div>
+
+
+
+                        </li>
+
+                        <!--t-->
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
@@ -286,20 +303,20 @@
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
+                                    {{__('Profile')}}
                                 </a>
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
+                                    {{__('Settings')}}
                                 </a>
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                    {{__('Activity Log')}}
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/login" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    {{__('Logout')}}
                                 </a>
                             </div>
                         </li>
@@ -333,15 +350,15 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">{{__('Ready to Leave?')}}</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">{{__('Select Logout below if you are ready to end your current session.')}}</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="/logout">Logout</a>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">{{__('Cancel')}}</button>
+                    <a class="btn btn-primary" href="/logout">{{__('Logout')}}</a>
                 </div>
             </div>
         </div>
@@ -387,8 +404,8 @@
       var perusahaanname = $(this).attr('data-name');
       var id = $(this).attr('data-id');
         swal({
-          title: "Are you sure?",
-          text: "Once deleted, you will not be able to recover this data "+perusahaanname+" file!",
+          title: "{{__('Are you sure?')}}",
+          text: "{{__('Once deleted, you will not be able to recover this data')}} "+perusahaanname+" {{__('file!')}}",
           icon: "warning",
           buttons: true,
           dangerMode: true,
@@ -396,11 +413,11 @@
         .then((willDelete) => {
           if (willDelete) {
             window.location = "/perusahaan/delete/"+id+""
-            swal("It worked! File "+perusahaanname+" has been deleted!", {
+            swal("{{__('It worked! File')}} "+perusahaanname+" {{__('has been deleted!')}}", {
               icon: "success",
             });
           } else {
-            swal("Your imaginary file is safe!");
+            swal("{{__('Your imaginary file is safe!')}}");
           }
         });
     });

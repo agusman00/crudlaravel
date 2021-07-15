@@ -27,7 +27,7 @@
 
             <div class="row align-items-start">
                 <div class="col">
-                 <h6>Nama Depan</h6>
+                 <h6>{{__('Nama Depan')}}</h6>
                 </div>
                 <div class="col-1">
                  <h6 class="text-center">:</h6>
@@ -38,7 +38,7 @@
             </div>
             <div class="row align-items-start">
                 <div class="col">
-                 <h6>Nama Belakang</h6>
+                 <h6>{{__('Nama Belakang')}}</h6>
                 </div>
                 <div class="col-1">
                  <h6 class="text-center">:</h6>
@@ -49,7 +49,7 @@
             </div>
             <div class="row align-items-start">
                 <div class="col">
-                 <h6>Email Address </h6>
+                 <h6>{{__('Email Address')}} </h6>
                 </div>
                 <div class="col-1">
                  <h6 class="text-center">:</h6>
@@ -60,7 +60,7 @@
             </div>
             <div class="row align-items-start">
                 <div class="col">
-                 <h6>Nomor Telepon</h6>
+                 <h6>{{__('Nomor Telepon')}}</h6>
                 </div>
                 <div class="col-1">
                  <h6 class="text-center">:</h6>
@@ -73,7 +73,7 @@
             </div>
         </div>
             <br>
-            <a href="/karyawan/index" type="button" class="btn btn-primary btn-sm">Kembali</a>
+            <a href="/" type="button" class="btn btn-primary btn-sm">Kembali</a>
 
         </div>
         </div>

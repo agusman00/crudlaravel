@@ -5,7 +5,7 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard Perusahaan</h1>
+            <h1 class="h3 mb-0 text-gray-800">{{__('Dashboard Perusahaan')}}</h1>
         </div>
 
         <!-- Content Row
@@ -17,7 +17,7 @@
             <!--content-->
 <div class="">
     <div class="row">
-        <a href="/perusahaan/adddata" class="btn btn-success ml-2" type="button">Tambah +</a>
+        <a href="/perusahaan/adddata" class="btn btn-success ml-2" type="button">{{__('Tambah +')}}</a>
         <a href="/perusahaan/index" class="btn btn-primary ml-2" type="button"><i class="fas fa-sync-alt"></i></a>
 
     </div>
@@ -34,11 +34,11 @@
     <table class="table">
     <thead>
     <tr>
-        <th>No</th>
-        <th>Nama Perusahaan</th>
-        <th>Email Perusahaan</th>
-        <th>Logo Perusahaan</th>
-        <th>Action</th>
+        <th>{{__('No')}}</th>
+        <th>{{__('Nama Perusahaan')}}</th>
+        <th>{{__('Email Perusahaan')}}</th>
+        <th>{{__('Logo Perusahaan')}}</th>
+        <th>{{__('Action')}}</th>
     </tr>
     </thead>
     <tbody>

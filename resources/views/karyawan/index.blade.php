@@ -5,9 +5,9 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <h1 class="h3 mb-0 text-gray-800">{{__('Dashboard')}}</h1>
             <a href="/karyawan/exportpdf" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-            class="fas fa-download fa-sm text-white-50"></i> Download Data</a>
+            class="fas fa-download fa-sm text-white-50"></i> {{__('Download Data')}}</a>
         </div>
 
         <!-- Content Row
@@ -19,8 +19,8 @@
             <!--content-->
 <div class="">
     <div class="row">
-        <a href="/karyawan/adddata" class="btn btn-success" type="button">Tambah +</a>
-        <a href="/karyawan/index" class="btn btn-primary ml-2" type="button"><i class="fas fa-sync-alt"></i></a>
+        <a href="/karyawan/adddata" class="btn btn-success" type="button">{{__('Tambah +')}}</a>
+        <a href="/" class="btn btn-primary ml-2" type="button"><i class="fas fa-sync-alt"></i></a>
     </div>
 
 
@@ -35,13 +35,13 @@
     <table class="table">
     <thead>
     <tr>
-        <th>No</th>
-        <th>Nama Depan</th>
-        <th>Nama Belakang</th>
-        <th>Perusahaan</th>
-        <th>Email</th>
-        <th>Nomor Telepon</th>
-        <th>Action</th>
+        <th>{{__('No')}}</th>
+        <th>{{__('Nama Depan')}}</th>
+        <th>{{__('Nama Belakang')}}</th>
+        <th>{{__('Perusahaan')}}</th>
+        <th>{{__('Email')}}</th>
+        <th>{{__('Nomor Telepon')}}</th>
+        <th>{{__('Action')}}</th>
     </tr>
     </thead>
     <tbody>

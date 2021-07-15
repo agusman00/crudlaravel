@@ -1,0 +1,14 @@
+{
+    "Admin":"管理者","Dashboard":"ダッシュボード","Table":"テーブル","Perusahaan":"ペルサハーン","Karyawan":"カリヤワン","Pages":"ページ","My profile":"私のプロフィール", "OTHER PAGES": "その他のページ", "Setting Akun": "くんの設定", "logout":"ログアウト", "Search for...":"検索...", "Alerts Center":"アラートセンター", "December 12, 2019":"2019年12月12日...", "A new monthly report is ready to download!":"新しい月次レポートをダウンロードする準備ができました！", "December 7, 2019":"2019年12月2日", "$290.29 has been deposited into your account!":"$ 290.29があなたのアカウントに預けられました！",
+    "December 2, 2019":"2019年12月2日", "Spending Alert: Weve noticed unusually high spending for your account.":" 支出アラート：アカウントの支出が異常に高いことに気づきました",
+    "Show All Alerts":"すべてのアラートを表示", "Message Center":"メッセージセンター",
+    "Hi there! I am wondering if you can help me with a problem I ve been having." :"こんにちは！私が抱えている問題について、あなたが私を助けてくれないかと思います",
+    "Emily Fowler · 58m":"Emily Fowler · 58m", "I have the photos that you ordered last month, how would you like them sent to you?":"先月注文した写真がありますが、どのように送ってもらいますか？",
+    "Jae Chun · 1d":"Jae Chun · 1d", "Read More Messages":"続きを読むメッセージ","Country":"国", "IDONESIAN":"インドネシア語", "ENGLISH":"中国", "CHINA":"中国", "JEPANG":"ジェパン", "Profile":"プロフィール", "Settings":"設定",
+    "Activity Log":"アクティビティログ","Logout":"ログアウト",
+    "Download Data":"データのダウンロード", "Tambah +":"タンバ+", "No":"いいえ","Nama Depan":"ナマデパン","Nama Belakang":"ナマベラカン", "Email":"メール", "Nomor Telepon":"/ナンバーハンドポンド", "Action":"アクション",
+    "Ready to Leave?":"出発する準備はできましたか？","Select Logout below if you are ready to end your current session.":" 現在のセッションを終了する準備ができている場合は、以下の[ログアウト]を選択します。","Cancel":"キャンセル",
+    "Are you sure?":"よろしいですか？", "Once deleted, you will not be able to recover this data":"削除すると、このデータを復元することはできなくなります","file!":"ファイル","Your imaginary file is safe!":"あなたの架空のファイルは安全です！",
+    "Nama Perusahaan":"会社名", "Email Perusahaan":"会社のメールアドレス ", "Logo Perusahaan":"会社のロゴ","Dashboard Perusahaan":"会社のダッシュボード","Email Address":"電子メールアドレス","Dashboard Perusahaan":"公司仪表盘","Email Address":"电子邮件地址","Well never share your email with anyone else.":"メールを他の人と共有しないでください。"
+
+    }

@@ -2,7 +2,10 @@
 
 use App\Http\Controllers\Karyawan;
 use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Session;
+use Illuminate\Contracts\Session\Session;
 use App\Http\Controllers\PerusahaanModelController;
+use Illuminate\Routing\Middleware\Locallang;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,7 +49,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
 //endverified
 
 
-
+//locallang
+Route::get('locale/{locale}',function($locale){
+    \Session::put('locale',$locale);
+    return redirect()->back();
+});
 
 
 

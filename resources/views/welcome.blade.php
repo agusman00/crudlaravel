@@ -27,14 +27,40 @@
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
+                        <!--tanda-->
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">{{__('Login')}}</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">{{__('Register')}}</a>
                         @endif
                     @endauth
                 </div>
             @endif
+            @if(app()->getLocale()=='id')
+                <a href="{{url('locale/en')}}" class="btn btn-primary">Eng {{trans('english')}}</a>
+                <a href="{{url('locale/cn')}}" class="btn btn-primary">Cn {{trans('china')}}</a>
+                <a href="{{url('locale/jp')}}" class="btn btn-primary">Jp {{trans('jepang')}}</a>
+                <a href="{{url('locale/id')}}" class="btn btn-primary">Id {{trans('indonesian')}}</a>
+            @endif
+            @if(app()->getLocale()=='en')
+                <a href="{{url('locale/id')}}" class="btn btn-primary">Id {{trans('indonesian')}}</a>
+                <a href="{{url('locale/cn')}}" class="btn btn-primary">Cn {{trans('china')}}</a>
+                <a href="{{url('locale/jp')}}" class="btn btn-primary">Jp {{trans('jepang')}}</a>
+                <a href="{{url('locale/en')}}" class="btn btn-primary">Eng {{trans('english')}}</a>
+            @endif
+            @if(app()->getLocale()=='cn')
+                <a href="{{url('locale/id')}}" class="btn btn-primary">Id {{trans('indonesian')}}</a>
+                <a href="{{url('locale/en')}}" class="btn btn-primary">Eng {{trans('english')}}</a>
+                <a href="{{url('locale/jp')}}" class="btn btn-primary">Jp {{trans('jepang')}}</a>
+                <a href="{{url('locale/cn')}}" class="btn btn-primary">Cn {{trans('china')}}</a>
+            @endif
+            @if(app()->getLocale()=='jp')
+                <a href="{{url('locale/id')}}" class="btn btn-primary">Id {{trans('indonesian')}}</a>
+                <a href="{{url('locale/en')}}" class="btn btn-primary">Eng {{trans('english')}}</a>
+                <a href="{{url('locale/cn')}}" class="btn btn-primary">Cn {{trans('china')}}</a>
+                <a href="{{url('locale/jp')}}" class="btn btn-primary">Jp {{trans('jepang')}}</a>
+            @endif
+
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
@@ -55,7 +81,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
+                                    {{__('Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.')}}
                                 </div>
                             </div>
                         </div>
