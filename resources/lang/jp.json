@@ -9,6 +9,7 @@
     "Download Data":"データのダウンロード", "Tambah +":"タンバ+", "No":"いいえ","Nama Depan":"ナマデパン","Nama Belakang":"ナマベラカン", "Email":"メール", "Nomor Telepon":"/ナンバーハンドポンド", "Action":"アクション",
     "Ready to Leave?":"出発する準備はできましたか？","Select Logout below if you are ready to end your current session.":" 現在のセッションを終了する準備ができている場合は、以下の[ログアウト]を選択します。","Cancel":"キャンセル",
     "Are you sure?":"よろしいですか？", "Once deleted, you will not be able to recover this data":"削除すると、このデータを復元することはできなくなります","file!":"ファイル","Your imaginary file is safe!":"あなたの架空のファイルは安全です！",
-    "Nama Perusahaan":"会社名", "Email Perusahaan":"会社のメールアドレス ", "Logo Perusahaan":"会社のロゴ","Dashboard Perusahaan":"会社のダッシュボード","Email Address":"電子メールアドレス","Dashboard Perusahaan":"公司仪表盘","Email Address":"电子邮件地址","Well never share your email with anyone else.":"メールを他の人と共有しないでください。"
+    "Nama Perusahaan":"会社名", "Email Perusahaan":"会社のメールアドレス ", "Logo Perusahaan":"会社のロゴ","Dashboard Perusahaan":"会社のダッシュボード","Email Address":"電子メールアドレス","Dashboard Perusahaan":"公司仪表盘","Email Address":"电子邮件地址","Well never share your email with anyone else.":"メールを他の人と共有しないでください。","Detail Perusahaan":"会社の詳細","Kembali":"バック",
+    "Tambah Data Perusahaan":"会社データの追加","Logo":"ロゴ","Detail Data":"詳細データ","Update Data":"データの更新"
 
     }

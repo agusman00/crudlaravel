@@ -10,6 +10,7 @@
 "Ready to Leave?":"Ready to Leave?","Select Logout below if you are ready to end your current session.":"Select Logout below if you are ready to end your current session.","Cancel":"Cancel",
 "Are you sure?":"Are you sure?", "Once deleted, you will not be able to recover this data":"Once deleted, you will not be able to recover this data","file!":"file","Your imaginary file is safe!":"Your imaginary file is safe!",
 "Nama Perusahaan":"Company Name ", "Email Perusahaan":"Company Email", "Logo Perusahaan":"Company Logo","Dashboard Perusahaan":"Company Dashboard",
-"Email Address":"Email Address","Well never share your email with anyone else.":"Well never share your email with anyone else."
+"Email Address":"Email Address","Well never share your email with anyone else.":"Well never share your email with anyone else.","Detail Perusahaan":"Company Details","Kembali":"Back",
+"Tambah Data Perusahaan":"Add Company Data","Logo":"Logo","Submit":"Submit","Detail Data":"Detail Data","Update Data":"Update Data"
 
 }

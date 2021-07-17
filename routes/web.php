@@ -21,6 +21,9 @@ use Illuminate\Routing\Middleware\Locallang;
 Route::get('/welcome', function () {
     return view('welcome');
 });
+Route::get('/test', function () {
+    return('test ajah');
+});
 
 
 

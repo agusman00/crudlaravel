@@ -11,7 +11,7 @@
     <title>Karyawan</title>
   </head>
   <body>
-    <h1 class="text-center">Update Data</h1>
+    <h1 class="text-center">{{__('Update Data')}}</h1>
 
     <!--content-->
     <div class="container">
@@ -47,7 +47,7 @@
                 <input type="number" name="tlpn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 value="{{$data->tlpn}}">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">{{__('Submit')}}</button>
         </form>
         </div>
         </div>

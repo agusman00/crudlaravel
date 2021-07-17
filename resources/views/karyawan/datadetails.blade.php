@@ -11,7 +11,7 @@
     <title>Karyawan</title>
   </head>
   <body>
-    <h1 class="text-center">Detail Data</h1>
+    <h1 class="text-center">{{__('Detail Data')}}</h1>
 
     <!--content-->
     <div class="container">
@@ -73,7 +73,7 @@
             </div>
         </div>
             <br>
-            <a href="/" type="button" class="btn btn-primary btn-sm">Kembali</a>
+            <a href="/" type="button" class="btn btn-primary btn-sm">{{__('Kembali')}}</a>
 
         </div>
         </div>

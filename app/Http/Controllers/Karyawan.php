@@ -48,7 +48,7 @@ class Karyawan extends Controller
         $this->validate($request,[
             'namadepan' => 'required|min:3|max:20',
             'namabelakang' => 'required|min:3|max:15',
-            'perusahaan' => 'required|min:5|max:20',
+            'perusahaan' => 'required|min:5|max:50',
             'tlpn' => 'required|min:10|max:12',
         ]);
         //dd($request->all());

@@ -35,6 +35,7 @@
     <thead>
     <tr>
         <th>{{__('No')}}</th>
+        <th>ID</th>
         <th>{{__('Nama Perusahaan')}}</th>
         <th>{{__('Email Perusahaan')}}</th>
         <th>{{__('Logo Perusahaan')}}</th>
@@ -45,6 +46,7 @@
         @foreach($data as $index=> $row)
         <tr>
             <th scope="row">{{$index + $data->firstItem()}}</th>
+            <td>{{$row->id}}</td>
             <td>{{$row->nama}}</td>
             <td>{{$row->email}}</td>
             <td>

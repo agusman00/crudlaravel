@@ -15,6 +15,8 @@ class CreateKaryawanMSTable extends Migration
     {
         Schema::create('karyawan_m_s', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('perusahaan_id');
+            $table->foreign('perusahaan_id')->references('id')->on('perusahaan_models')->onUpdate('cascade')->onDelete('cascade');
             $table->string('namadepan');
             $table->string('namabelakang');
             $table->string('perusahaan');

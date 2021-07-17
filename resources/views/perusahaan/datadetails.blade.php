@@ -11,7 +11,7 @@
     <title>Perusahaan</title>
   </head>
   <body>
-    <h1 class="text-center">Detail Perusahaan</h1>
+    <h1 class="text-center">{{__('Detail Perusahaan')}}</h1>
 
     <!--content-->
     <div class="container">
@@ -27,7 +27,7 @@
 
             <div class="row align-items-start">
                 <div class="col">
-                 <h6>Nama Perusahaan</h6>
+                 <h6>{{__('Nama Perusahaan')}}</h6>
                 </div>
                 <div class="col-1">
                  <h6 class="text-center">:</h6>
@@ -38,7 +38,7 @@
             </div>
             <div class="row align-items-start">
                 <div class="col">
-                 <h6>Email Perusahaan</h6>
+                 <h6>{{__('Email Perusahaan')}}</h6>
                 </div>
                 <div class="col-1">
                  <h6 class="text-center">:</h6>
@@ -49,7 +49,7 @@
             </div>
             <div class="row align-items-start">
                 <div class="col">
-                 <h6>Logo Perusahaan</h6>
+                 <h6>{{__('Logo Perusahaan')}}</h6>
                 </div>
                 <div class="col-1">
                  <h6 class="text-center">:</h6>
@@ -62,7 +62,7 @@
             </div>
         </div>
             <br>
-            <a href="/perusahaan/index" type="button" class="btn btn-primary btn-sm">Kembali</a>
+            <a href="/perusahaan/index" type="button" class="btn btn-primary btn-sm">{{__('Kembali')}}</a>
 
         </div>
         </div>
